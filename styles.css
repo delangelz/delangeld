@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("imagen/fondo.png"); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    margin: 0;
+    height: 100vh; /* Toda la altura de la ventana */
+    display: flex; /* Utiliza flexbox para centrar elementos */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.caja {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco translúcido */
+    border: 2px solid #007bff; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 80%; /* Ocupa el 80% del ancho de la pantalla */
+    max-width: 600px; /* Ancho máximo para pantallas grandes */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+.caja h1, .caja p {
+    color: #000; /* Texto negro para buen contraste */
+    margin: 10px 0; /* Espaciado entre elementos */
+}
+
+
+button {
+    background-color: #28a745; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Elimina el borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s; /* Transición para el cambio de color */
+}
+
+button:hover {
+    background-color: #218838; /* Color del botón al pasar el mouse */
+}
+
+input {
+    font-size: 16px; /* Tamaño del texto en los campos */
+    padding: 5px; /* Espaciado interno */
+    margin-top: 10px; /* Espaciado superior */
+}

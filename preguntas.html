@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas de Fútbol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="caja">
+        <h1>Juego de Preguntas de Fútbol</h1>
+        <p>Introduce los nombres de los jugadores para comenzar.</p>
+
+        <!-- Formulario inicial para los nombres de los jugadores -->
+        <div id="formularioInicial">
+            <p>
+                Jugador 1: 
+                <input type="text" id="jugador1Nombre" placeholder="Nombre Jugador 1" required>
+            </p>
+            <p>
+                Jugador 2: 
+                <input type="text" id="jugador2Nombre" placeholder="Nombre Jugador 2" required>
+            </p>
+            <button id="iniciar">Iniciar Juego</button>
+        </div>
+
+        <!-- Juego principal (invisible al inicio) -->
+        <div id="juego" style="display: none;">
+            <p id="turno"></p>
+            <p id="pregunta"></p>
+            <input type="text" id="respuesta" placeholder="Tu respuesta aquí">
+            <button id="enviar">Enviar Respuesta</button>
+            <div id="estadoJugador"></div>
+        </div>
+
+        <!-- Resultados finales (invisible al inicio) -->
+        <div id="resultados" style="display: none;"></div>
+    </div>
+
+    <!-- Archivo JavaScript para la validación y lógica del juego -->
+    <script src="script.js"></script>
+</body>
+</html>
+
